@@ -2,7 +2,7 @@
   <div class="hello">
      <router-link to="/calendar"><a>Calendar</a></router-link>
      <router-link to="/recipe"><a>Recipe</a></router-link>
-  </div>
+     <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
   </div>
 </template>
 
@@ -32,5 +32,6 @@ li {
 }
 a {
   color: #42b983;
+  padding: 1em;
 }
 </style>
