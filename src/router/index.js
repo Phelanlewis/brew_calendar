@@ -12,6 +12,6 @@ export default new Router({
     { path: '/', name: 'Home', component: Home },
     {path: '/calendar', name: 'Calendar', component: Calendar},
     { path: '/recipe', name: 'Recipe', component: Recipe },
-    { path: 'addrecipe', name: 'AddRecipe', component: AddRecipe }
+    { path: '/addrecipe', name: 'AddRecipe', component: AddRecipe }
   ]
 })
