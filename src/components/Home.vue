@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <h1>{{ msg }} </h1>
      <router-link to="/calendar"><a>Calendar</a></router-link>
      <router-link to="/recipe"><a>Recipe</a></router-link>
      <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
@@ -11,7 +12,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Brewstr'
     }
   }
 }

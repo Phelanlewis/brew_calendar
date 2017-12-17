@@ -1,6 +1,6 @@
 <<template>
   <div>
-    <h1>Add Recipe</h1>
+    <h1>{{ msg }}</h1>
     <form>
       <p>Batch Size: <input v-model="batchSize" placeholder="Size?"></p>
       <p>Fermantable: 
@@ -13,7 +13,7 @@
         <input class="input" v-model="nameHop" placeholder="Name of Hop?">
         <input class="input" v-model="weightHop" placeholder="Weight?">
         <input class="input" v-model="timeHop" placeholder="Time?">
-        <input class="input" v-model="aaHop" placeholder="aa?">
+        <input class="input" v-model="aaHop" placeholder="AA?">
         <input class="input" v-model="formHop" placeholder="Form?">
       </p>
       <p>Yeast: 
@@ -22,6 +22,7 @@
         <input class="inputForm" v-model="formYeast" placeholder="Form?">
         <input class="inputForm" v-model="attentuableYeast" placeholder="Attentuable?">  
       </p>
+      <button v-on:click></button>
     </form>  
     <div>
       <p>The Batch size is <strong>{{ batchSize }}</strong> </p>
@@ -35,6 +36,7 @@
 export default {
   data () {
     return {
+      msg: 'Welcome to the Add Recipe Page',
       batchSize: '',
       nameMalt: '',
       weightMalt: '',
