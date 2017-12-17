@@ -1,6 +1,11 @@
 <<template>
   <div>
-    <h1>{{ msg }}</h1>
+    <div class="hello">
+      <h1>{{ title }}</h1>
+      <router-link to="/calendar"><a>Calendar</a></router-link>
+      <router-link to="/recipe"><a>Recipe</a></router-link>
+      <router-link to="/"><a>Home</a></router-link>
+    </div>
     <form>
       <p>Batch Size: <input v-model="batchSize" placeholder="Size?"></p>
       <p>Fermantable: 
@@ -36,7 +41,7 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to the Add Recipe Page',
+      title: 'Welcome to the Add Recipe Page',
       batchSize: '',
       nameMalt: '',
       weightMalt: '',
@@ -56,7 +61,19 @@ export default {
 }
 </script>
 <style>
- #inputForm {
-   padding: 1em;
- }
+ #inputFh1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+  padding: 1em;
+}
 </style>

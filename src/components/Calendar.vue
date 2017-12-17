@@ -1,12 +1,19 @@
 /* eslint-disable */
 <template>
     <div id='app'>
-        <h1>My Calendar</h1>
-            <calendar-month 
-			:show-date='showDate'
-			@setShowDate='setShowDate'
-			class="holiday-us-traditional holiday-us-official"
-		/>
+      <div class="hello">
+        <h1>{{ title }}</h1>
+        <router-link to="/recipe"><a>Recipe List</a></router-link>
+        <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
+        <router-link to="/"><a>Home</a></router-link>
+      </div>
+      <div>
+        <calendar-month 
+			    :show-date='showDate'
+			    @setShowDate='setShowDate'
+			    class="holiday-us-traditional holiday-us-official"
+		    />
+      </div>
 	</div>
 </template>
 
@@ -18,7 +25,10 @@
   export default {
     name: 'app',
     data: function () {
-      return { showDate: new Date() }
+      return {
+        title: 'My Calendar',
+        showDate: new Date()
+      }
     },
     components: {
       CalendarMonth
@@ -39,4 +49,19 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+  h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+  padding: 1em;
+}
 </style>
