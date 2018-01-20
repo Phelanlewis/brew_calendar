@@ -1,6 +1,13 @@
 <<template>
   <div class="hello">
-    <h1>{{ msg }} </h1>
+    <div class="hello">
+        <h1>{{ title }}</h1>
+        <router-link to="/recipe"><a>Recipe List</a></router-link>
+        <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
+        <router-link to="/"><a>Home</a></router-link>
+        <router-link to="/brewing"><a>Is it Brew Day?</a></router-link>
+      </div>
+      <h2>What recipe are we doing today?</h2>
   </div>
 </template>
 
@@ -8,7 +15,7 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to Brew Day!'
+      title: 'Welcome to Brew Day!'
     }
   }
 }

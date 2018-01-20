@@ -4,6 +4,7 @@
      <router-link to="/calendar"><a>Calendar</a></router-link>
      <router-link to="/recipe"><a>Recipe</a></router-link>
      <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
+     <router-link to="/brewing"><a>Is it Brew Day?</a></router-link>
   </div>
 </template>
 

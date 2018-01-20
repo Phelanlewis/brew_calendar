@@ -5,6 +5,7 @@
       <router-link to="/calendar"><a>Calendar</a></router-link>
       <router-link to="/addrecipe"><a>Add Recipe</a></router-link>
       <router-link to="/"><a>Home</a></router-link>
+      <router-link to="/brewing"><a>Is it Brew Day?</a></router-link>
     </div>
     <p>Malt : I am a number</p>
     <p>Hops : I am also a number</p>

@@ -5,6 +5,7 @@
       <router-link to="/calendar"><a>Calendar</a></router-link>
       <router-link to="/recipe"><a>Recipe</a></router-link>
       <router-link to="/"><a>Home</a></router-link>
+      <router-link to="/brewing"><a>Is it Brew Day?</a></router-link>
     </div>
     <form>
       <p>Batch Size: <input v-model="batchSize" placeholder="Size?"></p>
