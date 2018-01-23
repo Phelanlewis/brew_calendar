@@ -1,18 +1,30 @@
 {
-  "name": "server",
+  "name": "brew-calendar-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Patrick Bollenbach | Phelan Lewis",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^1.0.3",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "knex": "^0.14.2",
-    "pg": "^7.4.0"
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.0",
+    "nodemailer": "^2.6.4",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pg": "^6.1.0",
+    "randomstring": "^1.1.5"
   }
 }
